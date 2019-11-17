@@ -46,6 +46,24 @@ def naming_system
   # HoH all the way to Species!
   naming_system = PORTION_1
 
+  PORTION_4 = {
+    label: "Species",
+    sub_category: nil
+  }
+
+  PORTION_3 = {
+    label: "Family",
+    sub_category: {
+      label: "Genus",
+      sub_category: PORTION_4
+    }
+  }
+
+  PORTION_2 = {
+    label: "Order",
+    sub_category: PORTION_3
+  }
+
   PORTION_1 = {
      label: "Kingdom",
      sub_category: {
@@ -57,22 +75,6 @@ def naming_system
      }
    }
 
-   PORTION_2 = {
-     label: "Order",
-     sub_category: PORTION_3
-   }
-
-   PORTION_3 = {
-     label: "Family",
-     sub_category: {
-       label: "Genus",
-       sub_category: PORTION_4
-     }
-   }
-
-   PORTION_4 = {
-     label: "Species",
-     sub_category: nil
-   }
+naming_system = PORTION_1
 
 end
