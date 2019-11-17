@@ -14,12 +14,12 @@ PORTION_1 = {
      }
    }
  }
- 
+
  PORTION_2 = {
    label: "Order"
     sub_category: PORTION_3
  }
- 
+
  PORTION_3 = {
    label: "Family",
    sub_category: {
@@ -27,7 +27,7 @@ PORTION_1 = {
       sub_category: PORTION_4
    }
  }
- 
+
  PORTION_4 = {
    label: "Species",
    sub_category: nil
@@ -56,12 +56,12 @@ def naming_system
        }
      }
    }
-   
+
    PORTION_2 = {
      label: "Order"
       sub_category: PORTION_3
    }
-   
+
    PORTION_3 = {
      label: "Family",
      sub_category: {
@@ -69,7 +69,7 @@ def naming_system
         sub_category: PORTION_4
      }
    }
-   
+
    PORTION_4 = {
      label: "Species",
      sub_category: nil
